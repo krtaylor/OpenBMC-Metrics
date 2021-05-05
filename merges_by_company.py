@@ -79,7 +79,6 @@ def commits_by_company(period_name, start_date, end_date):
 
 def do_month():
    if len(sys.argv) > 1 :
-      print (len(sys.argv))
       year = sys.argv[1]
       month = sys.argv[2]
    else:
@@ -93,7 +92,9 @@ def do_month():
                          + "-01", year +"-" + month + "-"
                          + str(calendar.monthrange(int(year), int(month))[1]))
    else:
+      print
       print("Check Usage: Month must be a number between 1 and 12")
+      print
       
 def main():
    do_month()
